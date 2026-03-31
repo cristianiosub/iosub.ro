@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="100" height="100" rx="22" fill="url(#bg)"/>
+
+  <!-- Subtle inner shine -->
+  <rect width="100" height="100" rx="22" fill="url(#shine)"/>
+
+  <!-- "C" letter -->
+  <text x="18" y="68"
+        font-family="-apple-system, 'Segoe UI', sans-serif"
+        font-weight="800"
+        font-size="56"
+        fill="white"
+        opacity="1">C</text>
+
+  <!-- "I" letter — slightly smaller, accent color -->
+  <text x="60" y="68"
+        font-family="-apple-system, 'Segoe UI', sans-serif"
+        font-weight="800"
+        font-size="56"
+        fill="rgba(186,230,255,0.95)">I</text>
+
+  <!-- Small dot accent bottom-right -->
+  <circle cx="84" cy="78" r="5" fill="rgba(255,255,255,0.5)"/>
+</svg>
