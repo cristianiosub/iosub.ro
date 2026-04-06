@@ -1217,13 +1217,21 @@ footer a:hover { color: white; }
   margin: 1rem 0 0.25rem;
 }
 .footer-projects a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   font-size: 0.75rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.55);
   letter-spacing: 0.01em;
   transition: color 0.2s;
 }
-.footer-projects a:hover { color: rgba(255,255,255,0.75); }
+.footer-projects a svg {
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+.footer-projects a:hover { color: rgba(255,255,255,0.9); }
+.footer-projects a:hover svg { opacity: 1; }
 .footer-projects-label {
   font-size: 0.65rem;
   font-weight: 700;
@@ -2199,10 +2207,11 @@ footer a:hover { color: white; }
   <div class="footer-divider"></div>
   <p class="footer-projects-label">Personal Projects</p>
   <div class="footer-projects">
-    <a href="https://whois.iosub.ro" target="_blank" rel="noopener">whois.iosub.ro</a>
-    <a href="https://data.iosub.ro" target="_blank" rel="noopener">data.iosub.ro</a>
-    <a href="https://sms.iosub.ro" target="_blank" rel="noopener">sms.iosub.ro</a>
-    <a href="https://crm.iosub.ro" target="_blank" rel="noopener">crm.iosub.ro</a>
+    <a href="https://whois.iosub.ro" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>whois.iosub.ro</a>
+    <a href="https://data.iosub.ro" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>data.iosub.ro</a>
+    <a href="https://sms.iosub.ro" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>sms.iosub.ro</a>
+    <a href="https://crm.iosub.ro" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>crm.iosub.ro</a>
+    <a href="https://www.digitalcheck.ro/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Digital Check</a>
   </div>
   <div class="footer-divider"></div>
   <p>© 2026 All rights reserved · <a href="mailto:cristian@iosub.ro" target="_blank" rel="noopener">cristian@iosub.ro</a></p>
