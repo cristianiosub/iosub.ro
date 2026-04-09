@@ -1,0 +1,170 @@
+# ===========================================
+# .gitignore complet pentru PHP/MySQL
+# Shared Hosting
+# ===========================================
+
+# ----------------------------------------
+# CRITIC: Credențiale & Configurații
+# ----------------------------------------
+
+# Variabile de mediu
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Configurații aplicație
+config.php
+config.local.php
+settings.php
+database.php
+db.php
+connection.php
+*.local.php
+*.secret.php
+
+# Chei API & certificate
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.csr
+*.jks
+*.keystore
+
+# Fișiere cu credențiale explicite
+credentials.php
+credentials.json
+secrets.php
+secrets.json
+secrets.yml
+secrets.yaml
+auth.json
+service-account*.json
+*.token
+*.tokens
+
+# ----------------------------------------
+# CRITIC: Baze de date
+# ----------------------------------------
+
+*.sql
+*.sql.gz
+*.dump
+*.db
+*.sqlite
+*.sqlite3
+database/backups/
+backups/
+backup/
+db_backups/
+dump/
+
+# ----------------------------------------
+# Loguri & Debugging
+# ----------------------------------------
+
+*.log
+*.log.*
+/logs/
+/log/
+storage/logs/
+var/logs/
+app/logs/
+*.lock
+php_errors.log
+error_log
+debug.log
+
+# ----------------------------------------
+# Shared hosting specific
+# ----------------------------------------
+
+# cPanel
+.cpanel/
+cpanel_backups/
+/tmp/
+tmp/
+
+# htaccess cu parole
+.htpasswd
+/.htaccess
+
+# FTP credentials
+.ftpconfig
+sftp-config.json
+.ftpquota
+deployment.yml
+deploy.php
+
+# ----------------------------------------
+# Dependențe & Build
+# ----------------------------------------
+
+vendor/
+node_modules/
+bower_components/
+composer.lock
+package-lock.json
+yarn.lock
+.npm/
+dist/
+build/
+.sass-cache/
+
+# ----------------------------------------
+# Storage & Upload-uri
+# ----------------------------------------
+
+storage/
+storage/documents/
+storage/uploads/
+public/assets/img/uploads/
+uploads/
+media/
+files/
+cache/
+.cache/
+sessions/
+
+# ----------------------------------------
+# Documente & Date sensibile
+# ----------------------------------------
+
+*.pdf
+*.csv
+*.docx
+*.doc
+*.xls
+*.xlsx
+*.xml
+*.zip
+*.tar.gz
+*.rar
+
+# ----------------------------------------
+# IDE & OS
+# ----------------------------------------
+
+.DS_Store
+*.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+nbproject/
+.phpunit.result.cache
+*.swp
+*~
+
+# ----------------------------------------
+# Email & SMTP
+# ----------------------------------------
+
+mailer.php
+smtp.php
+phpmailer.log
